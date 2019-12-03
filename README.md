@@ -15,4 +15,4 @@ Historically, detecting visibility of an element, or the relative visibility of 
 
 ## Dependency
 
-[IntersectionObserver Polyfill)(https://www.npmjs.com/package/intersection-observer-polyfill#installation)
+[IntersectionObserver Polyfill](https://www.npmjs.com/package/intersection-observer-polyfill#installation)
