@@ -9,4 +9,10 @@ Historically, detecting visibility of an element, or the relative visibility of 
 1. Clone repository
 2. Run `npm install`
 3. Run `npm run build` or `npm run watch`
-4. Run PHP built-in server `php -S 127.0.0.1:8080`
+4. Run PHP built-in server with `php -S 127.0.0.1:8080` command
+
+---
+
+## Dependency
+
+[IntersectionObserver Polyfill)(https://www.npmjs.com/package/intersection-observer-polyfill#installation)
