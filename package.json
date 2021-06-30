@@ -1,16 +1,21 @@
 {
-  "name": "intersectionobserver",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "lazyload-elements",
+  "type": "module",
+  "version": "2.0.0",
+  "source": "src/index.js",
+  "exports": "./dist/lazyload-elements.modern.js",
+  "main": "./dist/lazyload-elements.cjs",
+  "module": "./dist/lazyload-elements.module.js",
+  "unpkg": "./dist/lazyload-elements.umd.js",
   "scripts": {
-    "watch": "node ./node_modules/parcel-bundler/bin/cli.js ./index.js --public-url ./",
-    "build": "node ./node_modules/parcel-bundler/bin/cli.js build ./index.js --public-url ./"
+    "build": "microbundle",
+    "dev": "microbundle watch"
   },
-  "author": "",
   "license": "ISC",
   "dependencies": {
-    "intersection-observer-polyfill": "^0.1.0",
-    "parcel-bundler": "^1.12.4"
+    "intersection-observer-polyfill": "^0.1.0"
+  },
+  "devDependencies": {
+    "microbundle": "^0.13.3"
   }
 }

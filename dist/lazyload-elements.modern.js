@@ -1,0 +1,2 @@
+import e from"intersection-observer-polyfill";window.addEventListener("load",function(){function r(r,o,t){const n=o,s=document.querySelectorAll(`${r}.${o}`),i={rootMargin:"0px",threshold:1},a=new e((e,r)=>{e.forEach(e=>{if(e.isIntersecting){const{target:o}=e;o[t]=o.dataset.src,o.classList.remove(n),r.unobserve(o)}})});s.forEach(e=>{a.observe(e,i)})}r("iframe","lazy-iframe","src"),r("a","lazy-href","href")});
+//# sourceMappingURL=lazyload-elements.modern.js.map
