@@ -1,6 +1,6 @@
 import IntersectionObserver from "intersection-observer-polyfill";
 
-export function lazyLoadElements(target, targetClassName, attribute) {
+function lazyLoadElements(target, targetClassName, attribute) {
   const lazyLoadClass = targetClassName;
   const lazyImages = document.querySelectorAll(`${target}.${targetClassName}`);
 
@@ -24,3 +24,5 @@ export function lazyLoadElements(target, targetClassName, attribute) {
     imageObserver.observe(image, options);
   });
 }
+
+module.exports = lazyLoadElements;
