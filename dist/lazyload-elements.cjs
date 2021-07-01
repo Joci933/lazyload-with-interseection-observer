@@ -1,0 +1,2 @@
+function e(e){return e&&"object"==typeof e&&"default"in e?e:{default:e}}var t=e(require("intersection-observer-polyfill"));module.exports=function(e,r,o){var n=r,i=document.querySelectorAll(e+"."+r),c={rootMargin:"0px",threshold:1},u=new t.default(function(e,t){e.forEach(function(e){if(e.isIntersecting){var r=e.target;r[o]=r.dataset.src,r.classList.remove(n),t.unobserve(r)}})});i.forEach(function(e){u.observe(e,c)})};
+//# sourceMappingURL=lazyload-elements.cjs.map
