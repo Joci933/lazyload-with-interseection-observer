@@ -5,6 +5,8 @@ The Intersection Observer API provides a way to asynchronously observe changes i
 Historically, detecting visibility of an element, or the relative visibility of two elements in relation to each other, has been a difficult task for which solutions have been unreliable and prone to causing the browser and the sites the user is accessing to become sluggish
 
 ## Usage
+`npm i lazyload-elements`
+
 ```
 import lazyLoadElements from "lazyload-elements";
 
