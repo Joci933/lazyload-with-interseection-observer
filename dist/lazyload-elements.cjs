@@ -1,2 +1,0 @@
-function e(e){return e&&"object"==typeof e&&"default"in e?e:{default:e}}var r=e(require("intersection-observer-polyfill"));window.addEventListener("load",function(){function e(e,t,n){var o=t,a=document.querySelectorAll(e+"."+t),i={rootMargin:"0px",threshold:1},f=new r.default(function(e,r){e.forEach(function(e){if(e.isIntersecting){var t=e.target;t[n]=t.dataset.src,t.classList.remove(o),r.unobserve(t)}})});a.forEach(function(e){f.observe(e,i)})}e("iframe","lazy-iframe","src"),e("a","lazy-href","href")});
-//# sourceMappingURL=lazyload-elements.cjs.map
